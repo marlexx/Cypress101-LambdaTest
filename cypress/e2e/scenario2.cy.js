@@ -7,8 +7,8 @@ describe('template spec', () => {
 
     cy.findByText('Input Form Submit').click();
 
-    //cy.injectAxe();
-    //cy.checkA11y();
+    cy.injectAxe();
+    cy.checkA11y();
 
     cy.get('#name').type(faker.person.firstName());
     cy.get('#inputEmail4').type(faker.internet.email());
